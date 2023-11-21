@@ -9,5 +9,5 @@ Diante dessa demanda, surgiu a iniciativa do projeto Pub Connect. Com ele, os cl
 
 O projeto é dividido em dois serviços essenciais: O primeiro, denominado 'Pub Connect API', é responsável por processar todas as requisições HTTP, realizando validação das regras de negócio e operações no banco de dados. Por sua vez, o segundo serviço, denominado 'Auth Connect', atua como um provedor de identidades OAuth2, gerenciando o fluxo de autenticação e autorização. Ao final do processo, ele emite um token de autenticação, possibilitando que o cliente o utilize dentro do Pub Connect API.
 
-* [Apresentação da Arquitetura Backend .NET](/Infra%20Pub%20Connect.md)
-* [Apresentação da Infraestrutura Cloud AWS](/Backend%20Pub%20Connect.md)
+* [Apresentação da Arquitetura Backend .NET](/Backend%20Pub%20Connect.md)
+* [Apresentação da Infraestrutura Cloud AWS](/Infra%20Pub%20Connect.md)
