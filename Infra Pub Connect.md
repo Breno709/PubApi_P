@@ -3,12 +3,11 @@ O projeto a seguir é uma apresentação de infraestrura cloud AWS e serviço ba
 Por ser um projeto de origem privada, não posso demonstrar detalhes como código fonte e afins. Ao invés disso, mostrarei uma visão geral da infraestrutura implementada, assim como detalhes sobre decisões tomadas no momento de projetar o sistema.
 
 ## Visão Geral
-O projeto aqui apresentado pelo codinome 'Pub Connect' tem por objetivo o desenvolvimento de um serviço API REST responsável por expor endpoints para que os clientes possam realizar automações em um ERP desenvolvido pela mesma empresa. 
-Este ERP até o momento não disponibilizava forma de automatizar seus processos. Deixando os clientes apenas com a possibilidade de interagir com o sistema através de suas interfaces gráficas (Desktop, Mobile, Web).
-Para resolver este problema, surgiu a iniciativa do projeto Pub Connect. Com ele, será possível os clientes criarem seus próprios fluxos de automação através de requisições HTTP.
+O projeto, identificado pelo codinome 'Pub Connect', visa desenvolver um serviço API REST que expõe endpoints, permitindo que os clientes automatizem processos em um ERP da mesma empresa. Até então, esse ERP não oferecia uma maneira de automatizar seus processos, limitando os clientes à interação por meio de interfaces gráficas (Desktop, Mobile, Web).
 
-O projeto é divido em dois seviços: O primeiro 'Pub Connect API' é o serviço responsável por processar todas as requisições HTTP solicitadas, realizando a validação das regras de negócio e operações no banco de dados.
-Já o segundo serviço, chamado 'Auth Connect' trata-se de um provedor de identidades OAuth2 responsável pelo fluxo de autenticação e autorização. Que por fim, produz um token de autenticação para que o cliente possa utilizar dentro do Pub Connect API.
+Diante dessa demanda, surgiu a iniciativa do projeto Pub Connect. Com ele, os clientes ganham a capacidade de criar seus próprios fluxos de automação por meio de requisições HTTP.
+
+O projeto é dividido em dois serviços essenciais: O primeiro, denominado 'Pub Connect API', é responsável por processar todas as requisições HTTP, realizando validação das regras de negócio e operações no banco de dados. Por sua vez, o segundo serviço, denominado 'Auth Connect', atua como um provedor de identidades OAuth2, gerenciando o fluxo de autenticação e autorização. Ao final do processo, ele emite um token de autenticação, possibilitando que o cliente o utilize dentro do Pub Connect API.
 
 ## Modelo da Arquitetura
 O diagrama de contexto a seguir mostra a visão geral do sistema e seus principais componentes, destacando as interações e fluxos que serão explicados logo abaixo.
